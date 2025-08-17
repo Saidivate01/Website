@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Seller Page Section -->
+    <div class="page-container w-full p-4">
+        <section id="seller-page" class="w-full max-w-xl bg-white p-8 rounded-2xl shadow-xl">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">Seller Dashboard</h1>
+            <p class="text-gray-600 mb-6">Welcome back, Seller! Here you can list materials you have for sale.</p>
+            
+            <!-- Material Listing Form -->
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 mb-6">
+                <h2 class="text-lg font-semibold text-gray-800 mb-4">List a New Material</h2>
+                <input id="material-input" type="text" placeholder="e.g., Pine Wood, 50kg Steel" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors mb-3">
+                <input id="price-input" type="number" placeholder="Price (e.g., 250)" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors mb-3">
+                <button id="list-material-button" class="w-full bg-green-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-green-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+                    List Material
+                </button>
+                <div id="seller-message-box" class="mt-4 p-3 rounded-lg text-sm hidden"></div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h2 class="text-lg font-semibold text-gray-800">My Listed Materials</h2>
+                <p class="text-gray-500 mt-2">Materials you've listed, with their prices and status.</p>
+                <ul id="seller-materials-list" class="mt-4 space-y-2 text-gray-700">
+                    <!-- Dynamic content will be injected here by JavaScript -->
+                </ul>
+            </div>
+
+            <button id="logout-button-seller" class="w-full mt-8 bg-gray-200 text-gray-700 font-semibold py-3 rounded-lg hover:bg-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+                Log Out
+            </button>
+        </section>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

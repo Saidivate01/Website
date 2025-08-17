@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Portal</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Owner Page Section -->
+    <div class="page-container w-full p-4">
+        <section id="owner-page" class="w-full max-w-2xl bg-white p-8 rounded-2xl shadow-xl">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">Owner's Portal</h1>
+            <p class="text-gray-600 mb-6">Hello, Owner! Here's an overview of the platform's transactions.</p>
+            
+            <!-- Price & Transaction Management Card -->
+            <div class="bg-blue-50 p-6 rounded-xl border border-blue-200 mb-6">
+                <h2 class="text-xl font-semibold text-blue-800">Price & Transaction Management</h2>
+                <p class="text-blue-600 mt-2">All pricing and sales decisions are handled by you. Below are all material listings.</p>
+                <ul id="owner-materials-list" class="mt-4 space-y-2 text-gray-700">
+                    <!-- Dynamic content will be injected here by JavaScript -->
+                </ul>
+            </div>
+
+            <!-- Seller Info Card (Updated) -->
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 mb-6">
+                <h2 class="text-xl font-semibold text-gray-800">Seller Information</h2>
+                <p class="text-gray-500 mt-2">Access seller reports and manage accounts.</p>
+                <ul class="mt-4 text-gray-700 space-y-2">
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 10-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> View all seller data</li>
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 10-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Manage seller accounts</li>
+                </ul>
+            </div>
+
+            <!-- Buyer Info Card (Updated) -->
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h2 class="text-xl font-semibold text-gray-800">Buyer Information</h2>
+                <p class="text-gray-500 mt-2">See all buyer activity, orders, and support requests.</p>
+                <ul class="mt-4 text-gray-700 space-y-2">
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 10-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Track buyer engagement</li>
+                    <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 10-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Review order history</li>
+                </ul>
+            </div>
+            
+            <button id="logout-button-owner" class="w-full mt-8 bg-gray-200 text-gray-700 font-semibold py-3 rounded-lg hover:bg-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+                Log Out
+            </button>
+        </section>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

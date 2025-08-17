@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Login Page Section -->
+    <div class="page-container w-full p-4">
+        <section class="w-full max-w-sm bg-white p-8 rounded-2xl shadow-xl">
+            <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">Welcome!</h1>
+            <p class="text-center text-gray-500 mb-8">Please log in to continue.</p>
+
+            <div class="space-y-4">
+                <input id="username-input" type="text" placeholder="Username" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">
+                <input id="password-input" type="password" placeholder="Password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">
+            </div>
+
+            <button id="login-button" class="w-full mt-6 bg-blue-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                Log In
+            </button>
+
+            <!-- Message box for errors or success -->
+            <div id="message-box" class="mt-4 p-3 rounded-lg text-sm hidden"></div>
+
+            <div class="mt-8 text-center text-gray-500 text-sm">
+                <p class="font-semibold text-gray-700 mb-2">Demo Credentials:</p>
+                <ul class="list-disc list-inside space-y-1 text-left inline-block">
+                    <li><span class="font-medium text-gray-600">Seller:</span> user: seller, pass: seller123</li>
+                    <li><span class="font-medium text-gray-600">Buyer:</span> user: buyer, pass: buyer123</li>
+                    <li><span class="font-medium text-gray-600">Owner:</span> user: owner, pass: owner123</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

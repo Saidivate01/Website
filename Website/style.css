@@ -1,0 +1,19 @@
+/*
+    This file contains CSS for the entire project.
+    We are using Tailwind CSS for utility classes, so this file is mostly for
+    global or custom styles that aren't easily done with Tailwind.
+*/
+
+body {
+    /* Set the font for the entire body */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom styles for centering and layout */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}

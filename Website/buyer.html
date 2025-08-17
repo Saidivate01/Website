@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Marketplace</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Buyer Page Section -->
+    <div class="page-container w-full p-4">
+        <section id="buyer-page" class="w-full max-w-xl bg-white p-8 rounded-2xl shadow-xl">
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">Buyer's Marketplace</h1>
+            <p class="text-gray-600 mb-6">Welcome, Buyer! Here you can view and purchase materials listed by sellers.</p>
+            
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <h2 class="text-lg font-semibold text-gray-800">Available Materials</h2>
+                <p class="text-gray-500 mt-2">These are the materials that sellers have listed. You can't see who listed them for privacy.</p>
+                <ul id="buyer-materials-list" class="mt-4 space-y-2 text-gray-700">
+                    <!-- Dynamic content will be injected here by JavaScript -->
+                </ul>
+            </div>
+
+            <button id="logout-button-buyer" class="w-full mt-8 bg-gray-200 text-gray-700 font-semibold py-3 rounded-lg hover:bg-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+                Log Out
+            </button>
+        </section>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
